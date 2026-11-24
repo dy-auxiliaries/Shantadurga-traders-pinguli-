@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shantadurga Traders, Pinguli Kudal – Groceries & Stationery</title>
+<meta name="description" content="Shantadurga Traders, Kudal: groceries, stationery and daily needs. Make your list and send it on WhatsApp.">
+<meta name="theme-color" content="#A8102B">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🛒%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yatra+One&family=Mukta:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F6EEDC;--card:#FFFFFF;--ink:#2A1B17;--muted:#6B5A52;--line:#E8DAC0;--red:#A8102B;--redink:#FFFFFF;--gold:#F2B011;--green:#1D6B43;--chip:#F2E6CC;
+--disp:"Yatra One","Mukta","Noto Sans Devanagari",Georgia,serif;--sans:"Mukta","Noto Sans Devanagari",system-ui,sans-serif;
+color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1A1210;--card:#261A17;--ink:#F8EBDD;--muted:#C2AE9F;--line:#41302A;--red:#D8324D;--chip:#33241F;--green:#4FC283;color-scheme:dark}}
+*{box-sizing:border-box;margin:0}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 70px)}
+body{background:var(--bg);color:var(--ink);font:500 16px/1.45 var(--sans);max-width:680px;margin:0 auto;padding-bottom:calc(120px + env(safe-area-inset-bottom,0px))}
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;display:flex;align-items:center;gap:10px;background:var(--red);color:#fff;padding:10px 16px;box-shadow:0 2px 10px rgba(0,0,0,.2)}
+.top::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--red);z-index:-1}
+.brand{font:400 21px/1.1 var(--disp);margin-right:auto}
+.lang{display:flex;background:rgba(255,255,255,.18);border-radius:99px;padding:3px}
+.lang button{border:0;background:none;color:#fff;font:700 13.5px var(--sans);padding:7px 13px;border-radius:99px;cursor:pointer}
+.lang button.on{background:#fff;color:var(--red)}
+.toran{height:30px;background:
+ radial-gradient(circle at 11px 9px,var(--gold) 6px,#E07A00 7px,transparent 8px) 0 0/22px 30px repeat-x,
+ linear-gradient(var(--green),var(--green)) 0 0/100% 3px no-repeat;position:relative}
+.toran::after{content:"";position:absolute;left:0;right:0;top:12px;height:14px;background:conic-gradient(from 150deg at 50% 0,var(--green) 0 60deg,transparent 60deg) 0 0/22px 14px repeat-x;opacity:.85}
+.hero{padding:20px 20px 8px;text-align:center}
+.hero h1{font:400 clamp(27px,8vw,38px)/1.18 var(--disp);color:var(--red)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .hero h1{color:#FF8FA3}}
+.hero .sub{margin-top:8px;color:var(--muted);font-weight:600}
+.hero .loc{display:inline-block;max-width:100%;line-height:1.4;border-radius:18px !important;margin-top:10px;font-weight:800;color:var(--green);border:1.5px solid var(--green);border-radius:99px;padding:4px 14px;font-size:14px}
+.search{display:block;padding:14px 16px 0;position:relative}
+.search input{width:100%;height:52px;border-radius:14px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);padding:0 16px 0 46px;font:600 16px var(--sans);box-shadow:0 4px 14px rgba(120,70,20,.08)}
+.search svg{position:absolute;left:30px;top:29px;width:22px;height:22px;color:var(--muted)}
+.cats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;padding:14px 16px 4px}
+.cat{border:2px solid transparent;border-radius:14px;padding:10px 2px 8px;cursor:pointer;text-align:center;color:var(--ink);font:700 11.5px/1.2 var(--sans);display:flex;flex-direction:column;align-items:center;gap:4px;min-height:78px;justify-content:center}
+.cat b{font-size:25px;line-height:1}
+.cat.on{border-color:var(--red);box-shadow:0 0 0 2px var(--red) inset}
+.group{padding:22px 16px 0}
+.gh{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.gh .ic{width:38px;height:38px;border-radius:12px;display:grid;place-items:center;font-size:21px}
+.gh h2{font:400 22px/1.2 var(--disp)}.gh .cnt{margin-left:auto;color:var(--muted);font-size:13.5px;font-weight:700}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:12px;margin-bottom:10px;display:flex;gap:12px;position:relative;box-shadow:0 2px 8px rgba(120,70,20,.06)}
+.card::before{content:"";position:absolute;left:0;top:14px;bottom:14px;width:4px;border-radius:0 4px 4px 0;background:var(--gold)}
+.ico{flex:none;width:58px;height:58px;border-radius:16px;display:grid;place-items:center;font-size:30px;margin-left:6px}
+.cb{flex:1;min-width:0}
+.nm{font:800 17px/1.25 var(--sans)}
+.packs{display:flex;flex-wrap:wrap;gap:6px;margin-top:7px}
+.pk{border:1.5px solid var(--line);background:var(--bg);color:var(--ink);font:700 13px var(--sans);padding:5px 11px;border-radius:99px;cursor:pointer;min-height:34px}
+.pk.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.pr{display:flex;align-items:center;justify-content:space-between;margin-top:9px}
+.price{font:400 22px var(--disp);color:var(--red)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .price{color:#FF8FA3}}
+.add{border:2px solid var(--green);background:transparent;color:var(--green);font:800 14px var(--sans);padding:6px 20px;border-radius:10px;cursor:pointer}
+.step{display:flex;align-items:center;background:var(--green);color:#fff;border-radius:10px}
+.step button{border:0;background:none;color:inherit;font:800 19px var(--sans);width:36px;height:34px;cursor:pointer}.step span{min-width:22px;text-align:center;font-weight:800}
+:root:not([data-theme="light"]) .step{color:#0E2A1B}
+button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.empty{padding:40px 20px;text-align:center;color:var(--muted);font-weight:600}
+.miss{margin:22px 16px 0;padding:18px;border:2px dashed var(--red);border-radius:16px;text-align:center}
+.miss b{display:block;font:400 19px var(--disp);margin-bottom:8px}
+.miss button{border:0;background:var(--red);color:var(--redink);font:800 15px var(--sans);padding:12px 22px;border-radius:12px;cursor:pointer}
+.foot{text-align:center;color:var(--muted);font-weight:700;font-size:13.5px;padding:24px 20px 0}
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:30;display:flex;justify-content:center;padding:0 12px calc(12px + env(safe-area-inset-bottom,0px));transform:translateY(130%);transition:transform .25s}.bar.show{transform:none}
+.bar button{width:100%;max-width:656px;display:flex;justify-content:space-between;align-items:center;border:0;background:var(--red);color:var(--redink);font:800 16px var(--sans);padding:16px 20px;border-radius:16px;cursor:pointer;box-shadow:0 8px 24px rgba(168,16,43,.4)}
+.scrim{position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:40;display:none}.scrim.show{display:block}
+.sheet{position:fixed;left:0;right:0;bottom:0;z-index:41;max-width:680px;margin:0 auto;background:var(--bg);border-radius:22px 22px 0 0;padding:20px 20px calc(20px + env(safe-area-inset-bottom,0px));max-height:92%;overflow-y:auto;transform:translateY(105%);transition:transform .28s;visibility:hidden}
+.sheet.show{transform:none;visibility:visible}
+.sheet h3{font:400 24px var(--disp);margin-bottom:8px;padding-right:44px}.sheet label{display:block;font-size:14px;color:var(--muted);margin:12px 0 4px;font-weight:700}
+.close{position:absolute;top:14px;right:14px;border:0;background:var(--chip);color:var(--ink);width:36px;height:36px;border-radius:50%;font-size:18px;cursor:pointer}
+input,textarea,select{width:100%;padding:12px 14px;border:1.5px solid var(--line);border-radius:12px;background:var(--card);color:var(--ink);font:600 16px var(--sans)}
+.line{display:flex;align-items:center;gap:10px;padding:9px 0;border-bottom:1px solid var(--line)}.line .n{flex:1;font-weight:700;line-height:1.25}.line .n small{display:block;color:var(--muted);font-weight:600}.line .p{font-weight:800;min-width:60px;text-align:right}
+.mode{display:flex;gap:8px;margin:12px 0 0}.mode button{flex:1;border:2px solid var(--line);background:var(--card);color:var(--ink);font:700 14px var(--sans);padding:10px 4px;border-radius:12px;cursor:pointer}.mode button.on{border-color:var(--green);background:var(--chip)}
+.total{display:flex;justify-content:space-between;font-weight:800;font-size:18px;margin:14px 0 0}
+.send{display:block;width:100%;text-align:center;text-decoration:none;border:0;background:#1FA855;color:#fff;font:800 16px var(--sans);padding:16px;border-radius:14px;cursor:pointer;margin-top:14px}
+.btn2{width:100%;border:2px solid var(--ink);background:transparent;color:var(--ink);font:800 15px var(--sans);padding:13px;border-radius:12px;cursor:pointer;margin-top:10px}
+.note{font-size:13.5px;color:var(--muted);text-align:center;margin-top:10px;font-weight:600}
+html{-webkit-text-size-adjust:100%}button,.cat,.pk{touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+body.lock{overflow:hidden}.sheet{overscroll-behavior:contain;max-height:92vh;max-height:92dvh}.brand{min-width:0}
+@media(max-width:380px){.lang button{padding:7px 9px;font-size:12.5px}.brand{font-size:18px}.top{padding:10px 12px}}
+.foot a{color:var(--green);font-weight:800;text-decoration:none;white-space:nowrap}.foot.adr{padding-top:12px;line-height:1.7}
+.call{display:flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.18);color:#fff;flex:none;text-decoration:none}.call svg{width:17px;height:17px;fill:currentColor}
+.hero .hrs{display:inline-block;margin:0;padding:5px 14px;border-radius:99px;background:var(--chip);color:var(--ink);font-weight:700;font-size:14px;line-height:1.4}
+@media(max-width:380px){.call{width:32px;height:32px}}
+.call{position:relative}.call::after{content:"";position:absolute;inset:-6px}
+.toast{position:fixed;left:50%;top:calc(env(safe-area-inset-top,0px) + 64px);transform:translate(-50%,-12px);background:#222;color:#fff;padding:10px 16px;border-radius:12px;font-weight:700;z-index:60;opacity:0;pointer-events:none;transition:.2s;max-width:90%;text-align:center}.toast.show{opacity:1;transform:translate(-50%,0)}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--green);outline-offset:2px}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
+.hero .meta{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:8px;margin-top:10px}
+.callbtn{display:inline-flex;align-items:center;gap:7px;border:0;background:var(--green);color:#fff;font:800 16px var(--sans);padding:10px 22px;border-radius:99px;cursor:pointer;box-shadow:0 3px 10px rgba(0,0,0,.18)}.callbtn svg{width:18px;height:18px;fill:currentColor}.callbtn:active{transform:scale(.97)}
+</style>
+</head>
+<body>
+<noscript><p style="padding:24px;text-align:center;font-family:sans-serif">Please turn on JavaScript to see the catalogue.<br>Call <a href="tel:+918446010969">+91 84460 10969</a> or WhatsApp +91 95273 85192.</p></noscript>
+<header class="top"><div class="brand" id="brand"></div><div class="lang" id="lang"><button data-l="en" class="on">EN</button><button data-l="mr">मराठी</button><button data-l="hi">हिन्दी</button></div></header>
+<div class="toran" aria-hidden="true"></div>
+<section class="hero"><h1 id="tag"></h1><p class="sub" id="sub"></p><span class="loc" id="loc"></span><div class="meta"><span class="hrs" id="hrs"></span><button type="button" class="callbtn" id="callBtn" aria-label="Call the shop"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg><span id="callLbl"></span></button></div></section>
+<label class="search"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M11 4a7 7 0 1 0 0 14 7 7 0 0 0 0-14zM20 20l-4-4"/></svg><input id="q" type="search" autocomplete="off"></label>
+<div class="cats" id="cats"></div>
+<main id="list"></main>
+<div class="miss"><b id="missT"></b><button id="missB"></button></div>
+<p class="foot" id="foot"></p>
+<p class="foot adr" id="adr"></p>
+
+<div class="bar" id="bar"><button id="openList"><span id="cnt"></span><span id="barTotal"></span></button></div>
+<div class="scrim" id="scrim"></div>
+
+<div class="sheet" id="cart" role="dialog">
+  <button class="close" data-close aria-label="Close">✕</button>
+  <h3 id="lt"></h3><div id="lines"></div>
+  <label for="extra" id="lex"></label><textarea id="extra" rows="2" maxlength="600"></textarea>
+  <div class="mode" id="mode"><button type="button" class="on" id="m1" style="pointer-events:none"></button></div>
+  <label for="nmI" id="lnm"></label><input id="nmI" autocomplete="name" maxlength="60">
+  <label for="ph" id="lph"></label><input id="ph" type="tel" inputmode="tel" autocomplete="tel" maxlength="16"><label for="tm" id="ltm"></label><select id="tm"></select>
+  <label for="cn" id="lno"></label><textarea id="cn" rows="2" maxlength="200"></textarea>
+  <div class="total"><span id="lest"></span><span id="grand"></span></div>
+  <p class="note" id="err" role="alert" style="color:var(--red);font-weight:800;min-height:0"></p>
+  <button class="send" id="sendList" style="border:0"></button>
+  <p class="note" id="lnote"></p>
+</div>
+
+<div class="sheet" id="done" role="dialog">
+  <button class="close" data-close aria-label="Close">✕</button>
+  <h3 id="dt"></h3><p class="note" id="dp" style="text-align:left;margin:0 0 12px"></p>
+  <a class="send" id="waLink" href="#" target="_blank" rel="noopener" style="margin-top:0"></a>
+  <p class="note" id="waHint" style="min-height:22px;margin:8px 0 0"></p>
+  <button class="btn2" id="copyBtn"></button>
+  <button class="btn2" id="clrBtn" type="button" style="margin-top:8px"></button>
+  <textarea id="preview" rows="7" readonly style="margin-top:12px"></textarea>
+  <p class="note" id="dn"></p>
+</div>
+
+<div class="sheet" id="callSheet" role="dialog">
+  <button class="close" data-close aria-label="Close">✕</button>
+  <h3 id="ctT"></h3><p class="note" id="ctH" style="text-align:left;margin:0 0 14px"></p>
+  <a class="send" id="callNow" href="tel:+918446010969" style="margin-top:0"></a>
+  <button class="btn2" id="callCp" type="button" style="margin-top:10px"></button>
+  <p class="note" id="ctN"></p>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+const CALLNO="+91 84460 10969",WA="919527385192",SHOP="Shantadurga Traders, Pinguli, Kudal";
+/* ===== Text in two languages ===== */
+const T={
+ en:{brand:"Shantadurga Traders",tag:"From dal to diaries, everything your family needs.",sub:"Groceries, stationery and everyday needs.",loc:"Near Bank of India, Kudal–Vengurla Road, Kudal, Sindhudurg – 416520, Maharashtra",search:"Search rice, dal, notebook…",all:"All",add:"ADD",view:"View list",items:["item","items"],lt:"My shopping list",empty:"Your list is empty. Add items from the catalog, or write them below.",extra:"Other items (not in the catalog)",extraPh:"Write item names and quantity",m1:"Pickup at shop",m2:"Ask for delivery",nm:"Your name",ad:"Village / address",no:"Note (optional)",est:"Estimated total",send:"Send list on WhatsApp",lnote:"Rates are estimates. The shop will confirm availability and the final bill.",missT:"Can’t find an item?",missB:"Write it on your list",none:"No items found. Try another word.",dt:"Almost done",dp:"Tap the green button, then press Send inside WhatsApp so the shop receives your list.",open:"Open WhatsApp",copy:"Copy list text",copied:"Copied. Now paste it in WhatsApp",opening:"Opening WhatsApp…",notopen:"Not opening? Tap Copy list text and paste it in WhatsApp.",dn:"If WhatsApp does not open, copy the text and send it to +91 95273 85192.",foot:"Shantadurga Traders, Pinguli, Kudal, Sindhudurg",count:"items"},
+ mr:{brand:"शांतादुर्गा ट्रेडर्स",tag:"डाळीपासून डायरीपर्यंत, तुमच्या घरासाठी सगळं काही.",sub:"किराणा, स्टेशनरी आणि रोजच्या गरजा.",loc:"बँक ऑफ इंडियाजवळ, कुडाळ–वेंगुर्ला रोड, कुडाळ, सिंधुदुर्ग – ४१६५२०, महाराष्ट्र",search:"तांदूळ, डाळ, वही शोधा…",all:"सर्व",add:"जोडा",view:"यादी पहा",items:["वस्तू","वस्तू"],lt:"माझी खरेदी यादी",empty:"तुमची यादी रिकामी आहे. कॅटलॉगमधून वस्तू जोडा किंवा खाली लिहा.",extra:"इतर वस्तू (कॅटलॉगमध्ये नसलेल्या)",extraPh:"वस्तूंची नावे व प्रमाण लिहा",m1:"दुकानातून घेईन",m2:"डिलिव्हरीबद्दल विचारा",nm:"तुमचे नाव",ad:"गाव / पत्ता",no:"सूचना (ऐच्छिक)",est:"अंदाजे एकूण",send:"यादी WhatsApp वर पाठवा",lnote:"दर अंदाजे आहेत. उपलब्धता आणि अंतिम बिल दुकान कळवेल.",missT:"हवी असलेली वस्तू सापडली नाही?",missB:"तुमच्या यादीत लिहा",none:"वस्तू सापडल्या नाहीत. दुसरा शब्द वापरा.",dt:"जवळजवळ झाले",dp:"हिरव्या बटणावर टॅप करा, मग WhatsApp मध्ये Send दाबा म्हणजे दुकानाला तुमची यादी मिळेल.",open:"WhatsApp उघडा",copy:"यादीचा मजकूर कॉपी करा",copied:"कॉपी झाले. आता WhatsApp मध्ये पेस्ट करा",opening:"WhatsApp उघडत आहे…",notopen:"उघडत नाही? यादीचा मजकूर कॉपी करा आणि WhatsApp मध्ये पेस्ट करा.",dn:"WhatsApp उघडले नाही तर मजकूर कॉपी करून +91 95273 85192 वर पाठवा.",foot:"शांतादुर्गा ट्रेडर्स, पिंगुळी, कुडाळ, सिंधुदुर्ग"}};
+T.hi={brand:"शांतादुर्गा ट्रेडर्स",tag:"दाल से डायरी तक, आपके घर की हर ज़रूरत।",sub:"किराना, स्टेशनरी और रोज़ की ज़रूरतें।",loc:"बैंक ऑफ इंडिया के पास, कुडाळ–वेंगुर्ला रोड, कुडाळ, सिंधुदुर्ग – 416520, महाराष्ट्र",search:"चावल, दाल, कॉपी खोजें…",all:"सभी",add:"जोड़ें",view:"सूची देखें",items:["वस्तु","वस्तुएँ"],lt:"मेरी खरीदारी सूची",empty:"आपकी सूची खाली है। कैटलॉग से वस्तुएँ जोड़ें या नीचे लिखें।",extra:"अन्य वस्तुएँ (कैटलॉग में नहीं)",extraPh:"वस्तुओं के नाम और मात्रा लिखें",m1:"दुकान से ले जाऊँगा",m2:"डिलीवरी के बारे में पूछें",nm:"आपका नाम",ad:"गाँव / पता",no:"सूचना (वैकल्पिक)",est:"अनुमानित कुल",send:"सूची WhatsApp पर भेजें",lnote:"दाम अनुमानित हैं। उपलब्धता और अंतिम बिल दुकान बताएगी।",missT:"चाहिए वाली वस्तु नहीं मिली?",missB:"अपनी सूची में लिखें",none:"कोई वस्तु नहीं मिली। दूसरा शब्द आज़माएँ।",dt:"बस हो गया",dp:"हरे बटन पर टैप करें, फिर WhatsApp में Send दबाएँ ताकि दुकान को आपकी सूची मिल जाए।",open:"WhatsApp खोलें",copy:"सूची का टेक्स्ट कॉपी करें",copied:"कॉपी हो गया। अब WhatsApp में पेस्ट करें",opening:"WhatsApp खुल रहा है…",notopen:"नहीं खुल रहा? सूची का टेक्स्ट कॉपी करके WhatsApp में पेस्ट करें।",dn:"अगर WhatsApp न खुले तो टेक्स्ट कॉपी करके +91 95273 85192 पर भेजें।",foot:"शांतादुर्गा ट्रेडर्स, पिंगुळी, कुडाळ, सिंधुदुर्ग"};
+T.en.adr="Near Bank of India, Kudal–Vengurla Road, Kudal, Sindhudurg – 416520, Maharashtra";T.en.map="Map";
+T.mr.adr="बँक ऑफ इंडियाजवळ, कुडाळ–वेंगुर्ला रोड, कुडाळ, सिंधुदुर्ग – ४१६५२०, महाराष्ट्र";T.mr.map="नकाशा";
+T.hi.adr="बैंक ऑफ इंडिया के पास, कुडाळ–वेंगुर्ला रोड, कुडाळ, सिंधुदुर्ग – 416520, महाराष्ट्र";T.hi.map="नक्शा";
+T.en.ph="Phone number (optional)";T.en.need="Please enter a valid 10-digit phone number, or leave it empty.";T.en.tm="Pickup time (optional)";T.en.any="Any time";T.en.hrs="Open 8:00 AM – 9:00 PM";T.en.call="Call";
+T.mr.ph="फोन नंबर (ऐच्छिक)";T.mr.need="१० अंकी योग्य फोन नंबर टाका किंवा रिकामा ठेवा.";T.mr.tm="घेण्याची वेळ (ऐच्छिक)";T.mr.any="कधीही";T.mr.hrs="सकाळी ८:०० ते रात्री ९:०० पर्यंत उघडे";T.mr.call="फोन";
+T.hi.ph="फ़ोन नंबर (वैकल्पिक)";T.hi.need="10 अंकों का सही फ़ोन नंबर डालें या खाली छोड़ दें।";T.hi.tm="लेने का समय (वैकल्पिक)";T.hi.any="कभी भी";T.hi.hrs="सुबह 8:00 से रात 9:00 बजे तक खुला";T.hi.call="कॉल";
+T.en.clr="Clear my list (start a new one)";T.en.long="Long list: if WhatsApp opens empty, tap Copy below and paste it in the chat.";
+T.mr.clr="यादी साफ करा (नवीन सुरू करा)";T.mr.long="यादी मोठी आहे: WhatsApp रिकामे उघडले तर खालील कॉपी बटण दाबून चॅटमध्ये पेस्ट करा.";
+T.hi.clr="सूची साफ़ करें (नई शुरू करें)";T.hi.long="सूची लंबी है: WhatsApp खाली खुले तो नीचे कॉपी दबाकर चैट में पेस्ट करें।";
+T.en.ct="Call the shop";T.en.cn="Call now";T.en.cp="Copy number";T.en.cpd="Number copied";
+T.mr.ct="दुकानाला फोन करा";T.mr.cn="आता फोन करा";T.mr.cp="नंबर कॉपी करा";T.mr.cpd="नंबर कॉपी झाला";
+T.hi.ct="दुकान को कॉल करें";T.hi.cn="अभी कॉल करें";T.hi.cp="नंबर कॉपी करें";T.hi.cpd="नंबर कॉपी हो गया";
+T.en.cth="If the call does not start, tap Copy number and dial it from your phone.";
+T.mr.cth="कॉल सुरू झाला नाही तर नंबर कॉपी करून फोनमधून डायल करा.";
+T.hi.cth="अगर कॉल शुरू न हो तो नंबर कॉपी करके फ़ोन से डायल करें।";
+const UH={kg:"किलो",g:"ग्राम",L:"लीटर",ml:"मिली",pc:"नग",pcs:"नग",pack:"पैकेट",set:"सेट",sets:"सेट",pages:"पन्ने",sheets:"शीट",m:"मी.",cm:"सेमी",W:"वॉट",bags:"बैग",Small:"छोटा",Medium:"मध्यम",Large:"बड़ा",Family:"फैमिली",Basic:"साधारण",Premium:"प्रीमियम"};
+const U={bags:"बॅग",kg:"किलो",g:"ग्रॅम",L:"लिटर",ml:"मिली",pc:"नग",pcs:"नग",pack:"पॅकेट",set:"सेट",sets:"सेट",pages:"पाने",sheets:"कागद",m:"मी.",cm:"सेमी",W:"वॅट",Small:"छोटा",Medium:"मध्यम",Large:"मोठा",Family:"फॅमिली",Basic:"साधा",Premium:"प्रीमियम"};
+/* ===== Categories: id, English, Marathi, icon, tile colour ===== */
+const CATS=[["rice","Rice & Grains","तांदूळ व धान्य","🌾","#FBE7C0"],["flour","Atta, Rava & Flours","पीठ व रवा","🥣","#F8DCC7"],["dal","Dal & Pulses","डाळी व कडधान्य","🫘","#F6D9D0"],["oil","Oil & Ghee","तेल व तूप","🛢️","#FFF0A8"],["spice","Spices & Masala","मसाले","🌶️","#F9CFCF"],["sugar","Sugar, Salt & Tea","साखर, मीठ व चहा","🍵","#DDEBCB"],["dry","Dry Fruits & Snacks","सुका मेवा व स्नॅक्स","🥜","#F3DDB8"],["pack","Packaged Food","पॅकबंद अन्न","🍜","#FBD9B5"],["clean","Cleaning & Home","सफाई व घरगुती","🧽","#CFE8F2"],["care","Personal Care","वैयक्तिक निगा","🧴","#E4D6F2"],["pooja","Pooja Items","पूजा साहित्य","🪔","#FFE3A3"],["stat","Stationery","स्टेशनरी","✏️","#CFE3F7"],["school","School & Office","शाळा व ऑफिस","🎒","#D6EBD3"],["kit","Kitchen & Utility","स्वयंपाकघर व उपयोगी","🍴","#E2E2E2"]];
+/* ===== Products (approx. market rates, Nov 2026; shop confirms final bill). Format: category, English, Marathi, icon, "pack:price|pack:price" ===== */
+const RAW=[
+["rice","Kolam Rice","कोलम तांदूळ","🌾","1 kg:64|5 kg:310|25 kg:1500"],["rice","Basmati Rice","बासमती तांदूळ","🍚","1 kg:120|5 kg:580"],["rice","Indrayani Rice","इंद्रायणी तांदूळ","🌾","1 kg:68|5 kg:330"],["rice","Poha (Thick)","जाड पोहे","🥣","500 g:36|1 kg:70"],["rice","Jowar","ज्वारी","🌾","1 kg:55|5 kg:260"],["rice","Bajra","बाजरी","🌾","1 kg:50|5 kg:240"],["rice","Ragi (Nachni)","नाचणी","🌾","500 g:45|1 kg:85"],["rice","Sabudana","साबुदाणा","⚪","500 g:48|1 kg:92"],["rice","Wheat","गहू","🌾","1 kg:42|5 kg:205|10 kg:400"],
+["flour","Wheat Atta","गव्हाचे पीठ (आटा)","🥣","1 kg:50|5 kg:255|10 kg:495"],["flour","Rava (Sooji)","रवा","🥣","500 g:28|1 kg:54"],["flour","Maida","मैदा","🥣","500 g:25|1 kg:46"],["flour","Besan","बेसन","🥣","500 g:50|1 kg:96"],["flour","Rice Flour","तांदळाचे पीठ","🥣","500 g:32|1 kg:60"],["flour","Jowar Flour","ज्वारीचे पीठ","🥣","500 g:30|1 kg:58"],["flour","Bhajani Flour","भाजणीचे पीठ","🥣","500 g:55|1 kg:105"],
+["dal","Toor Dal","तूर डाळ","🫘","500 g:72|1 kg:140|5 kg:685"],["dal","Moong Dal","मूग डाळ","🫘","500 g:62|1 kg:120"],["dal","Chana Dal","हरभरा डाळ","🫘","500 g:46|1 kg:90"],["dal","Urad Dal","उडीद डाळ","🫘","500 g:64|1 kg:125"],["dal","Masoor Dal","मसूर डाळ","🫘","500 g:46|1 kg:88"],["dal","Green Moong (Whole)","मूग (अख्खा)","🫘","500 g:58|1 kg:112"],["dal","Matki","मटकी","🫘","500 g:55|1 kg:105"],["dal","Chana (Whole)","हरभरा (अख्खा)","🫘","500 g:46|1 kg:88"],["dal","Vatana (Dry Peas)","वाटाणा","🫛","500 g:38|1 kg:74"],
+["oil","Sunflower Oil","सूर्यफूल तेल","🛢️","1 L:175|5 L:855"],["oil","Groundnut Oil","शेंगदाणा तेल","🛢️","1 L:210|5 L:1030"],["oil","Coconut Oil","खोबरेल तेल","🥥","500 ml:210|1 L:410"],["oil","Mustard Oil","मोहरीचे तेल","🛢️","500 ml:100|1 L:195"],["oil","Refined Oil","रिफाइंड तेल","🛢️","1 L:150|5 L:730"],["oil","Ghee","तूप","🧈","200 ml:150|500 ml:335|1 L:650"],["oil","Vanaspati","वनस्पती तूप","🧈","500 g:80|1 kg:155"],
+["spice","Turmeric Powder","हळद पावडर","🟡","100 g:35|200 g:65|500 g:150"],["spice","Red Chilli Powder","लाल तिखट","🌶️","100 g:38|200 g:72|500 g:170"],["spice","Coriander Powder","धणे पावडर","🌿","100 g:28|200 g:52"],["spice","Cumin (Jeera)","जिरे","🌿","100 g:60|200 g:115"],["spice","Mustard Seeds","मोहरी","🌿","100 g:15|500 g:70"],["spice","Garam Masala","गरम मसाला","🌶️","50 g:42|100 g:80"],["spice","Malvani Masala","मालवणी मसाला","🌶️","100 g:55|250 g:130"],["spice","Goda Masala","गोडा मसाला","🌶️","100 g:48|250 g:115"],["spice","Black Pepper","काळी मिरी","⚫","50 g:48|100 g:92"],["spice","Cardamom (Elaichi)","वेलची","🌿","10 g:42|50 g:195"],["spice","Bay Leaf","तमालपत्र","🍃","20 g:18|50 g:42"],["spice","Kokum (Aamsul)","कोकम (आमसूल)","🟣","100 g:60|250 g:140"],["spice","Tamarind","चिंच","🟤","250 g:40|500 g:76"],
+["sugar","Sugar","साखर","🍬","1 kg:60|5 kg:295|25 kg:1450"],["sugar","Jaggery (Gul)","गूळ","🟤","1 kg:62|5 kg:300"],["sugar","Salt","मीठ","🧂","1 kg:25|5 kg:115"],["sugar","Tea Powder","चहा पावडर","🍵","250 g:110|500 g:215|1 kg:420"],["sugar","Coffee Powder","कॉफी पावडर","☕","100 g:70|200 g:135"],["sugar","Honey","मध","🍯","250 g:120|500 g:225"],
+["dry","Cashew (Kaju)","काजू","🥜","100 g:100|250 g:245|500 g:480"],["dry","Almonds (Badam)","बदाम","🥜","100 g:90|250 g:215|500 g:420"],["dry","Raisins","मनुका","🍇","100 g:30|250 g:70"],["dry","Groundnuts","शेंगदाणे","🥜","500 g:68|1 kg:130"],["dry","Dry Coconut (Khobra)","सुके खोबरे","🥥","250 g:90|500 g:175"],["dry","Biscuits","बिस्किट्स","🍪","Small:10|Medium:25|Family:50"],["dry","Chivda","चिवडा","🥣","200 g:48|500 g:115"],["dry","Chikki","चिक्की","🍫","100 g:30|250 g:70"],["dry","Rusk (Toast)","टोस्ट","🍞","200 g:40|400 g:75"],
+["pack","Instant Noodles","इन्स्टंट नूडल्स","🍜","1 pack:14|4 pack:52|12 pack:150"],["pack","Pasta","पास्ता","🍝","200 g:40|500 g:90"],["pack","Tomato Ketchup","टोमॅटो केचप","🍅","200 g:55|500 g:120"],["pack","Mixed Fruit Jam","मिक्स फ्रूट जॅम","🍓","200 g:75|500 g:160"],["pack","Mango Pickle","आंब्याचे लोणचे","🥭","200 g:55|500 g:125"],["pack","Papad","पापड","🥠","200 g:55|500 g:130"],["pack","Peanut Butter","पीनट बटर","🥜","200 g:95|500 g:210"],["pack","Corn Flakes","कॉर्न फ्लेक्स","🥣","250 g:85|500 g:160"],["pack","Soya Chunks","सोया वडी","🟤","200 g:40|500 g:92"],["pack","Vermicelli (Shevaya)","शेवया","🍜","200 g:28|500 g:62"],
+["clean","Detergent Powder","डिटर्जंट पावडर","🧺","500 g:45|1 kg:88|3 kg:255"],["clean","Washing Bar","कपडे धुण्याचा साबण","🧼","1 pc:12|4 pcs:46"],["clean","Dishwash Liquid","भांडी धुण्याचे लिक्विड","🧽","250 ml:45|500 ml:85|1 L:160"],["clean","Dishwash Bar","भांडी धुण्याची वडी","🧽","1 pc:10|3 pcs:28"],["clean","Floor Cleaner","फरशी क्लीनर","🪣","500 ml:85|1 L:160"],["clean","Toilet Cleaner","टॉयलेट क्लीनर","🚽","500 ml:90|1 L:170"],["clean","Phenyl","फिनेल","🧴","500 ml:55|1 L:105"],["clean","Broom","झाडू","🧹","1 pc:70"],["clean","Mop","पोछा","🧹","1 pc:120"],["clean","Garbage Bags","कचरा पिशव्या","🗑️","30 pcs:90"],
+["care","Bathing Soap","अंघोळीचा साबण","🧼","1 pc:35|3 pcs:100"],["care","Shampoo","शाम्पू","🧴","80 ml:40|180 ml:95|340 ml:175"],["care","Toothpaste","टूथपेस्ट","🪥","100 g:55|200 g:105"],["care","Toothbrush","टूथब्रश","🪥","1 pc:25|3 pcs:70"],["care","Hair Oil","केसांचे तेल","🧴","100 ml:55|200 ml:105|500 ml:240"],["care","Talcum Powder","पावडर","🧴","100 g:60|200 g:110"],["care","Hand Wash","हँडवॉश","🧴","200 ml:85|500 ml:160"],["care","Sanitary Pads","सॅनिटरी पॅड","🩹","7 pcs:40|15 pcs:85"],
+["pooja","Agarbatti","अगरबत्ती","🪔","Small:20|Large:50"],["pooja","Camphor (Kapur)","कापूर","🪔","25 g:45|50 g:85"],["pooja","Cotton Wicks","फुलवाती","🪔","1 pack:15"],["pooja","Kumkum","कुंकू","🔴","50 g:25|100 g:45"],["pooja","Sandalwood Powder","चंदन पावडर","🟤","10 g:45"],["pooja","Matchbox","आगपेटी","🔥","10 pcs:20"],["pooja","Clay Diya","पणती","🪔","6 pcs:30|12 pcs:55"],["pooja","Coconut","नारळ","🥥","1 pc:35|3 pcs:100"],["pooja","Rangoli Colours","रांगोळी रंग","🎨","250 g:30|500 g:55"],
+["stat","Notebook (Long)","वही (मोठी)","📒","100 pages:40|172 pages:62|300 pages:105"],["stat","Notebook (Small)","वही (छोटी)","📓","100 pages:25|172 pages:42"],["stat","Ball Pen","बॉलपेन","🖊️","1 pc:5|10 pcs:45|50 pcs:210"],["stat","Gel Pen","जेल पेन","🖊️","1 pc:10|10 pcs:90"],["stat","Pencil","पेन्सिल","✏️","1 pc:5|10 pcs:42"],["stat","Eraser & Sharpener","खोडरबर व शार्पनर","✏️","1 set:10|5 sets:45"],["stat","Geometry Box","जॉमेट्री बॉक्स","📐","Basic:90|Premium:160"],["stat","Colour Pencils","रंगीत पेन्सिल","🖍️","12 pcs:55|24 pcs:105"],["stat","Crayons","क्रेयॉन","🖍️","12 pcs:40|24 pcs:75"],["stat","Sketch Pens","स्केच पेन","🖍️","12 pcs:60|24 pcs:110"],["stat","Marker Pen","मार्कर पेन","🖊️","1 pc:20|5 pcs:90"],["stat","Highlighter","हायलायटर","🖍️","1 pc:20|4 pcs:70"],["stat","Scale (Ruler)","पट्टी","📏","15 cm:10|30 cm:20"],["stat","Glue Stick","ग्लू स्टिक","🧴","8 g:15|21 g:35"],["stat","Cello Tape","सेलो टेप","📦","1 pc:15|3 pcs:42"],
+["school","A4 Paper","A4 कागद","📄","100 sheets:85|500 sheets:390"],["school","Chart Paper","चार्ट पेपर","📄","1 pc:10|10 pcs:90"],["school","Drawing Book","ड्रॉइंग बुक","🎨","20 pages:30|40 pages:55"],["school","Register","रजिस्टर","📒","100 pages:85|200 pages:150|300 pages:210"],["school","File Folder","फाईल","🗂️","1 pc:35|5 pcs:150"],["school","Plastic Folder","प्लास्टिक फोल्डर","🗂️","1 pc:12|10 pcs:100"],["school","Stapler","स्टेपलर","📎","1 pc:60"],["school","Staple Pins","स्टेपल पिन","📎","1 pack:15"],["school","Paper Clips","पेपर क्लिप","📎","1 pack:20"],["school","Envelopes","लिफाफे","✉️","10 pcs:20|50 pcs:90"],["school","Sticky Notes","स्टिकी नोट्स","🗒️","1 pack:35"],["school","Correction Fluid","व्हाईटनर","⚪","1 pc:25"],["school","Calculator","कॅल्क्युलेटर","🧮","1 pc:180"],["school","Bill Book","बिल बुक","🧾","1 pc:45"],["school","School Bag","शाळेची बॅग","🎒","1 pc:450"],["school","Water Bottle","पाण्याची बाटली","🍶","1 pc:120"],["school","Lunch Box","जेवणाचा डबा","🍱","1 pc:180"],
+["kit","Steel Plate","स्टीलचे ताट","🍽️","1 pc:150"],["kit","Steel Glass","स्टीलचा ग्लास","🥛","1 pc:45|6 pcs:260"],["kit","Plastic Bucket","प्लास्टिक बादली","🪣","16 L:120|20 L:150"],["kit","Plastic Mug","प्लास्टिक मग","🪣","1 pc:30"],["kit","Candles","मेणबत्ती","🕯️","6 pcs:25|12 pcs:45"],["kit","Battery (AA)","बॅटरी (AA)","🔋","2 pcs:20|4 pcs:38"],["kit","LED Bulb","एलईडी बल्ब","💡","9 W:85|12 W:120"],["kit","Torch","टॉर्च","🔦","1 pc:150"],["kit","Nylon Rope","दोरी","🧵","5 m:25|10 m:45"],["kit","Mosquito Coil","मच्छर कॉइल","🦟","1 pack:35"],["kit","Aluminium Foil","ॲल्युमिनियम फॉइल","🧻","9 m:45|72 m:290"]];
+RAW.push(["rice","Red Rice (Konkan)","लाल तांदूळ","🌾","1 kg:75|5 kg:360"],["rice","Poha (Thin)","पातळ पोहे","🥣","500 g:38|1 kg:72"],["flour","Ragi Flour","नाचणीचे पीठ","🥣","500 g:48|1 kg:92"],["flour","Multigrain Atta","मल्टीग्रेन आटा","🥣","1 kg:65|5 kg:310"],["dal","Rajma","राजमा","🫘","500 g:80|1 kg:155"],["dal","Kabuli Chana","काबुली चणे","🫘","500 g:75|1 kg:145"],["dal","Horse Gram (Kulith)","कुळीथ","🫘","500 g:48|1 kg:90"],["dal","Black Chana","काळा हरभरा","🫘","500 g:50|1 kg:95"],["spice","Dry Red Chilli","सुक्या लाल मिरच्या","🌶️","100 g:38|250 g:90|500 g:175"],["spice","Cloves (Laving)","लवंग","🌿","25 g:55|50 g:105"],["spice","Cinnamon (Dalchini)","दालचिनी","🌿","25 g:28|50 g:50"],["spice","Sesame Seeds (Til)","तीळ","⚪","100 g:28|250 g:65"],["spice","Fenugreek Seeds (Methi)","मेथी दाणे","🌿","100 g:15|250 g:36"],["spice","Ajwain","ओवा","🌿","100 g:38|250 g:85"],["spice","Hing (Asafoetida)","हिंग","🟡","10 g:32|50 g:150"],["spice","Pav Bhaji Masala","पावभाजी मसाला","🌶️","50 g:38|100 g:70"],["sugar","Rock Salt (Sendha Namak)","सैंधव मीठ","🧂","500 g:42|1 kg:75"],["sugar","Green Tea","ग्रीन टी","🍵","25 bags:130|100 bags:480"],["dry","Dates (Khajur)","खजूर","🌴","250 g:95|500 g:180"],["dry","Walnuts (Akrot)","अक्रोड","🌰","100 g:120|250 g:285"],["dry","Makhana","मखाना","⚪","100 g:90|250 g:210"],["dry","Namkeen Mixture","मिक्स्चर (चिवडा)","🥣","200 g:55|500 g:130"],["dry","Potato Chips","बटाटा वेफर्स","🥔","Small:10|Medium:20|Family:50"],["pack","Milk Powder","दूध पावडर","🥛","200 g:135|500 g:325"],["pack","Health Drink","हेल्थ ड्रिंक","🥤","200 g:120|500 g:265"],["pack","Oats","ओट्स","🥣","400 g:95|1 kg:210"],["clean","Scrub Pad","घासणी","🧽","1 pc:10|3 pcs:25"],["care","Face Cream","फेस क्रीम","🧴","25 g:50|50 g:95"],["care","Body Lotion","बॉडी लोशन","🧴","100 ml:95|250 ml:200"],["care","Face Wash","फेसवॉश","🧴","50 ml:85|100 ml:160"],["care","Comb","कंगवा","🪮","1 pc:20|3 pcs:55"],["pooja","Havan Samagri","हवन सामग्री","🪔","200 g:50|500 g:115"],["stat","Pencil Box","पेन्सिल बॉक्स","📦","Basic:60|Premium:120"],["stat","Fevicol","फेविकॉल","🧴","25 g:15|50 g:28|100 g:50"],["stat","Clip Board","क्लिप बोर्ड","📋","1 pc:50"],["school","Exam Pad","परीक्षा पॅड","📋","1 pc:45"],["school","Rubber Bands","रबर बँड","🟡","1 pack:20"],["kit","Gas Lighter","गॅस लायटर","🔥","1 pc:85"],["kit","Cloth Clips (Pegs)","कपड्याच्या चिमट्या","📎","12 pcs:30|24 pcs:55"],["kit","Scissors","कात्री","✂️","1 pc:45"],["kit","Padlock","कुलूप","🔒","Small:60|Large:140"]);
+const HI="कोलम चावल|बासमती चावल|इंद्रायणी चावल|मोटा पोहा|ज्वार|बाजरा|रागी (नाचनी)|साबूदाना|गेहूँ|गेहूँ का आटा|सूजी (रवा)|मैदा|बेसन|चावल का आटा|ज्वार का आटा|भाजनी का आटा|तुअर दाल|मूंग दाल|चना दाल|उड़द दाल|मसूर दाल|साबुत मूंग|मटकी|साबुत चना|सूखा मटर|सूरजमुखी तेल|मूंगफली तेल|नारियल तेल|सरसों का तेल|रिफाइंड तेल|घी|वनस्पति घी|हल्दी पाउडर|लाल मिर्च पाउडर|धनिया पाउडर|जीरा|सरसों के दाने|गरम मसाला|मालवणी मसाला|गोडा मसाला|काली मिर्च|इलायची|तेज पत्ता|कोकम (आमसूल)|इमली|चीनी|गुड़|नमक|चाय पत्ती|कॉफी पाउडर|शहद|काजू|बादाम|किशमिश|मूंगफली दाना|सूखा नारियल (खोपरा)|बिस्किट|चिवड़ा|चिक्की|टोस्ट (रस्क)|इंस्टेंट नूडल्स|पास्ता|टमाटर केचप|मिक्स फ्रूट जैम|आम का अचार|पापड़|पीनट बटर|कॉर्न फ्लेक्स|सोया बड़ी|सेवइयाँ|डिटर्जेंट पाउडर|कपड़े धोने का साबुन|बर्तन धोने का लिक्विड|बर्तन धोने की टिकिया|फर्श क्लीनर|टॉयलेट क्लीनर|फिनायल|झाड़ू|पोछा|कचरे की थैलियाँ|नहाने का साबुन|शैम्पू|टूथपेस्ट|टूथब्रश|बालों का तेल|टैल्कम पाउडर|हैंडवाश|सैनिटरी पैड|अगरबत्ती|कपूर|रुई की बत्तियाँ|कुमकुम|चंदन पाउडर|माचिस|मिट्टी का दीया|नारियल|रंगोली के रंग|कॉपी (बड़ी)|कॉपी (छोटी)|बॉलपेन|जेल पेन|पेंसिल|रबर व शार्पनर|ज्योमेट्री बॉक्स|रंगीन पेंसिल|क्रेयॉन|स्केच पेन|मार्कर पेन|हाइलाइटर|स्केल (पट्टी)|ग्लू स्टिक|सेलो टेप|A4 पेपर|चार्ट पेपर|ड्रॉइंग बुक|रजिस्टर|फाइल|प्लास्टिक फोल्डर|स्टेपलर|स्टेपल पिन|पेपर क्लिप|लिफाफे|स्टिकी नोट्स|व्हाइटनर|कैलकुलेटर|बिल बुक|स्कूल बैग|पानी की बोतल|टिफिन बॉक्स|स्टील की थाली|स्टील का गिलास|प्लास्टिक की बाल्टी|प्लास्टिक मग|मोमबत्ती|बैटरी (AA)|एलईडी बल्ब|टॉर्च|नायलॉन रस्सी|मच्छर कॉइल|एल्युमिनियम फॉइल|लाल चावल|पतला पोहा|रागी का आटा|मल्टीग्रेन आटा|राजमा|काबुली चना|कुलथी|काला चना|सूखी लाल मिर्च|लौंग|दालचीनी|तिल|मेथी दाना|अजवाइन|हींग|पावभाजी मसाला|सेंधा नमक|ग्रीन टी|खजूर|अखरोट|मखाना|नमकीन मिक्सचर|आलू चिप्स|दूध पाउडर|हेल्थ ड्रिंक|ओट्स|स्क्रब पैड|फेस क्रीम|बॉडी लोशन|फेस वॉश|कंघी|हवन सामग्री|पेंसिल बॉक्स|फेविकोल|क्लिप बोर्ड|एग्ज़ाम पैड|रबर बैंड|गैस लाइटर|कपड़े की क्लिप|कैंची|ताला".split("|");
+const HC={rice:"चावल व अनाज",flour:"आटा, सूजी व पीठ",dal:"दालें व कठोल",oil:"तेल व घी",spice:"मसाले",sugar:"चीनी, नमक व चाय",dry:"सूखे मेवे व स्नैक्स",pack:"पैकेट बंद खाना",clean:"सफाई व घरेलू",care:"पर्सनल केयर",pooja:"पूजा सामग्री",stat:"स्टेशनरी",school:"स्कूल व ऑफिस",kit:"रसोई व उपयोगी"};
+const CAT=Object.fromEntries(CATS.map(c=>[c[0],c]));
+const P=RAW.map((r,i)=>({id:i,c:r[0],e:r[1],m:r[2],h:HI[i]||r[2],ic:r[3],o:r[4].split("|").map(s=>{const j=s.lastIndexOf(":");return [s.slice(0,j),+s.slice(j+1)]})}));
+let LANG="en",cat="all",q="",mode="pickup";const sel={},cart={};
+const $=id=>document.getElementById(id),esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const t=k=>T[LANG][k],inr=n=>"₹"+Number(n).toLocaleString("en-IN");
+const nameOf=p=>LANG==="mr"?p.m:LANG==="hi"?p.h:p.e,catName=c=>LANG==="mr"?c[2]:LANG==="hi"?HC[c[0]]:c[1];
+const lab=s=>{const M=LANG==="mr"?U:LANG==="hi"?UH:null;return M?s.split(" ").map(w=>M[w]||w).join(" "):s};
+const keyOf=(id,i)=>id+"|"+i,parse=k=>{const [id,i]=k.split("|").map(Number);return [P[id],i]};
+const price=k=>{const [p,i]=parse(k);return p.o[i][1]};
+const count=()=>Object.values(cart).reduce((a,b)=>a+b,0),total=()=>Object.entries(cart).reduce((a,[k,v])=>a+price(k)*v,0);
+function ctl(p){const k=keyOf(p.id,sel[p.id]||0),n=cart[k]||0;
+  return n?`<span class="step"><button data-a="-1" data-key="${k}" aria-label="−">−</button><span>${n}</span><button data-a="1" data-key="${k}" aria-label="+">+</button></span>`:`<button class="add" data-a="1" data-key="${k}">${t("add")}</button>`;}
+function card(p){const si=sel[p.id]||0;
+  return `<article class="card" id="c${p.id}"><div class="ico" style="background:${CAT[p.c][4]}">${p.ic}</div><div class="cb"><div class="nm">${esc(nameOf(p))}</div>
+  <div class="packs">${p.o.map((o,i)=>`<button class="pk ${i===si?"on":""}" data-p="${p.id}" data-i="${i}">${esc(lab(o[0]))}</button>`).join("")}</div>
+  <div class="pr"><span class="price">${inr(p.o[si][1])}</span><span data-ctl="${p.id}">${ctl(p)}</span></div></div></article>`;}
+function match(p){if(cat!=="all"&&p.c!==cat)return false;if(!q)return true;const h=(p.e+" "+p.m+" "+p.h+" "+CAT[p.c][1]+" "+CAT[p.c][2]+" "+HC[p.c]).toLowerCase();return q.toLowerCase().split(/\s+/).every(w=>h.includes(w));}
+function renderStatic(){
+  document.title=LANG==="en"?"Shantadurga Traders, Pinguli Kudal":"शांतादुर्गा ट्रेडर्स, पिंगुळी कुडाळ";
+  $("brand").textContent=t("brand");$("tag").textContent=t("tag");$("sub").textContent=t("sub");$("loc").textContent=t("loc");$("q").placeholder=t("search");
+  $("missT").textContent=t("missT");$("missB").textContent=t("missB");$("foot").textContent=t("foot");
+  $("adr").innerHTML=`📍 ${t("adr")}<br><a href="tel:+918446010969">📞 ${t("call")}: +91 84460 10969</a> · <a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent("Shantadurga Traders Kudal Vengurla Road Kudal 416520")}" target="_blank" rel="noopener">🗺️ ${t("map")}</a>`;
+  $("lt").textContent=t("lt");$("lex").textContent=t("extra");$("extra").placeholder=t("extraPh");$("m1").textContent=t("m1");
+  $("lnm").textContent=t("nm");$("lph").textContent=t("ph");$("ltm").textContent=t("tm");if($("tm").options[0])$("tm").options[0].text=t("any");$("hrs").textContent="🕗 "+t("hrs");$("callLbl").textContent=t("call");if($("err").textContent)$("err").textContent=t("need");$("lno").textContent=t("no");$("lest").textContent=t("est");$("sendList").textContent=t("send");$("lnote").textContent=t("lnote");
+  $("dt").textContent=t("dt");$("dp").textContent=t("dp");$("waLink").textContent=t("open");$("copyBtn").textContent=t("copy");$("dn").textContent=t("dn");$("clrBtn").textContent=t("clr");$("ctT").textContent=t("ct");$("ctN").textContent=t("cth");$("ctH").textContent="🕗 "+t("hrs");$("callNow").textContent="📞 "+t("cn")+": "+CALLNO;if($("callCp").dataset.d!=="1")$("callCp").textContent=t("cp");}
+function renderCats(){const all=`<button class="cat ${cat==="all"?"on":""}" data-cat="all" style="background:var(--chip)"><b>🛒</b>${t("all")}</button>`;
+  $("cats").innerHTML=all+CATS.map(c=>`<button class="cat ${cat===c[0]?"on":""}" data-cat="${c[0]}" style="background:${c[4]};color:#2A1B17"><b>${c[3]}</b>${esc(catName(c))}</button>`).join("");}
+function renderList(){let h="";
+  CATS.forEach(c=>{const items=P.filter(p=>p.c===c[0]&&match(p));if(!items.length)return;
+    h+=`<section class="group" id="g-${c[0]}"><div class="gh"><span class="ic" style="background:${c[4]}">${c[3]}</span><h2>${esc(catName(c))}</h2><span class="cnt">${items.length}</span></div>${items.map(card).join("")}</section>`;});
+  $("list").innerHTML=h||`<p class="empty">${t("none")}</p>`;}
+function renderBar(){const n=count(),any=["cart","done","callSheet"].some(s=>$(s).classList.contains("show"));
+  $("bar").classList.toggle("show",n>0&&!any);
+  $("cnt").textContent=`${t("view")} · ${n} ${t("items")[n===1?0:1]}`;$("barTotal").textContent=inr(total());
+  const L=Object.entries(cart);
+  $("lines").innerHTML=L.length?L.map(([k,v])=>{const [p,i]=parse(k);return `<div class="line"><span class="n">${esc(nameOf(p))}<small>${esc(lab(p.o[i][0]))}</small></span><span class="step"><button data-a="-1" data-key="${k}">−</button><span>${v}</span><button data-a="1" data-key="${k}">+</button></span><span class="p">${inr(p.o[i][1]*v)}</span></div>`}).join(""):`<p class="note" style="text-align:left">${t("empty")}</p>`;
+  $("grand").textContent=inr(total());}
+function renderAll(){renderStatic();renderCats();renderList();renderBar();}
+function openSheet(id){["cart","done","callSheet"].forEach(s=>$(s).classList.toggle("show",s===id));$("scrim").classList.toggle("show",!!id);document.body.classList.toggle("lock",!!id);renderBar();}
+function change(k,d){cart[k]=Math.max(0,Math.min(99,(cart[k]||0)+d));if(!cart[k])delete cart[k];
+  const [p]=parse(k);const el=document.querySelector(`[data-ctl="${p.id}"]`);if(el)el.innerHTML=ctl(p);SAVE();renderBar();}
+document.addEventListener("click",e=>{
+  const l=e.target.closest("[data-l]");if(l){LANG=l.dataset.l;document.documentElement.lang=LANG;document.querySelectorAll("#lang button").forEach(b=>b.classList.toggle("on",b.dataset.l===LANG));try{localStorage.setItem("st_lang",LANG)}catch(_){}renderAll();return;}
+  const c=e.target.closest(".cat");if(c){cat=c.dataset.cat;renderCats();renderList();const top=$("list").getBoundingClientRect().top+scrollY-70;scrollTo({top:Math.max(0,top-8),behavior:"smooth"});return;}
+  const pk=e.target.closest(".pk");if(pk){const id=+pk.dataset.p;sel[id]=+pk.dataset.i;const p=P[id],el=$("c"+id);
+    el.querySelectorAll(".pk").forEach(b=>b.classList.toggle("on",+b.dataset.i===sel[id]));el.querySelector(".price").textContent=inr(p.o[sel[id]][1]);el.querySelector("[data-ctl]").innerHTML=ctl(p);return;}
+  const b=e.target.closest("button");if(!b)return;
+  if(b.dataset.a)return change(b.dataset.key,+b.dataset.a);
+  
+  if(b.hasAttribute("data-close"))openSheet(null);});
+$("q").addEventListener("input",e=>{q=e.target.value.trim();renderList();});
+$("openList").onclick=()=>openSheet("cart");$("missB").onclick=()=>{openSheet("cart");setTimeout(()=>$("extra").focus(),300);};$("scrim").onclick=()=>openSheet(null);
+/* ===== WhatsApp: opens the app directly on phones, with a copy fallback ===== */
+const waURL=x=>`https://wa.me/${WA}?text=${encodeURIComponent(x)}`;
+$("waLink").addEventListener("click",()=>{track("wa");$("waHint").textContent=t("opening");setTimeout(()=>{if(document.visibilityState==="visible")$("waHint").textContent=t("notopen");},2500);});
+$("copyBtn").onclick=()=>{const p=$("preview");p.select();p.setSelectionRange(0,99999);let ok=false;try{ok=document.execCommand("copy")}catch(_){}
+  if(!ok&&navigator.clipboard)navigator.clipboard.writeText(p.value).catch(()=>{});$("copyBtn").textContent=t("copied");};
+$("sendList").onclick=()=>{const extra=$("extra").value.trim();if(!count()&&!extra){$("extra").focus();return;}
+  $("err").textContent="";if($("ph").value.trim()&&!ph()){$("err").textContent=t("need");$("ph").focus();return;}
+  /* the message is always bilingual so the shop can read it easily */
+  let m=`*New shopping list – ${SHOP}*\n`;
+  m+=`Type: Pickup at shop\n`;
+  if(ph())m+=`Phone: +91 ${ph()}\n`;
+  if($("tm").value)m+=`Pickup time: ${$("tm").selectedOptions[0].text}\n`;
+  if($("nmI").value.trim())m+=`Name: ${$("nmI").value.trim()}\n`;
+  m+="\n";
+  m+=Object.entries(cart).map(([k,v])=>{const [p,i]=parse(k);return `${v} x ${p.e} (${p.m}) – ${p.o[i][0]} – ${inr(p.o[i][1]*v)}`}).join("\n");
+  if(extra)m+=`\n\nOther items:\n${extra}`;
+  if($("cn").value.trim())m+=`\n\nNote: ${$("cn").value.trim()}`;
+  if(count())m+=`\n\n*Estimated total: ${inr(total())}*`;
+  $("waLink").href=waURL(m);$("preview").value=m;$("waHint").textContent=m.length>1400?t("long"):"";$("copyBtn").textContent=t("copy");track("order");openSheet("done");};
+const SAVE=()=>{try{const o={};Object.entries(cart).forEach(([k,v])=>{const [p,i]=parse(k);o[p.e+"|"+p.o[i][0]]=v});localStorage.setItem("st_cart",JSON.stringify(o))}catch(_){}};
+function LOAD(){try{const o=JSON.parse(localStorage.getItem("st_cart")||"{}");Object.entries(o).forEach(([k,v])=>{const j=k.lastIndexOf("|"),p=P.find(x=>x.e===k.slice(0,j));if(!p)return;const i=p.o.findIndex(x=>x[0]===k.slice(j+1));if(i>-1&&+v>0)cart[keyOf(p.id,i)]=Math.min(99,+v)})}catch(_){}}
+try{const sv=localStorage.getItem("st_lang");if(sv==="mr"||sv==="hi"){LANG=sv;document.documentElement.lang=sv;document.querySelectorAll("#lang button").forEach(b=>b.classList.toggle("on",b.dataset.l===sv));}}catch(_){}
+document.addEventListener("keydown",e=>{if(e.key==="Escape")openSheet(null)});
+document.addEventListener("focusin",e=>{if(e.target.matches(".sheet input,.sheet textarea"))setTimeout(()=>e.target.scrollIntoView({block:"center",behavior:"smooth"}),350)});
+const ph=()=>{let d=$("ph").value.replace(/\D/g,"");if(d.length===12&&d.startsWith("91"))d=d.slice(2);if(d.length===11&&d[0]==="0")d=d.slice(1);return /^[6-9]\d{9}$/.test(d)?d:""};
+function toast(m){const e=$("toast");e.textContent=m;e.classList.add("show");clearTimeout(toast.t);toast.t=setTimeout(()=>e.classList.remove("show"),4500)}
+$("callBtn").addEventListener("click",e=>{e.preventDefault();track("call");$("callCp").dataset.d="";$("callCp").textContent=t("cp");openSheet("callSheet");});
+$("callNow").addEventListener("click",()=>{track("call");/* plain tel: link runs natively; on Android, if the dialer did not open, try the dial intent */
+  if(/Android/i.test(navigator.userAgent))setTimeout(()=>{if(document.visibilityState==="visible")location.href="intent:+918446010969#Intent;scheme=tel;action=android.intent.action.DIAL;end"},900);});
+$("callCp").onclick=()=>{let ok=false;try{const x=document.createElement("textarea");x.value=CALLNO;x.style.cssText="position:fixed;opacity:0";document.body.appendChild(x);x.select();x.setSelectionRange(0,99);ok=document.execCommand("copy");x.remove()}catch(_){}
+  if(!ok&&navigator.clipboard)navigator.clipboard.writeText(CALLNO).catch(()=>{});$("callCp").dataset.d="1";$("callCp").textContent=t("cpd");};
+$("clrBtn").onclick=()=>{Object.keys(cart).forEach(k=>delete cart[k]);$("extra").value="";$("cn").value="";SAVE();openSheet(null);renderAll();};
+const CK=["nmI","ph"];
+(()=>{const s=$("tm");s.add(new Option("",""));for(let m=480;m<=1230;m+=30){const h=Math.floor(m/60),mi=m%60,h12=h>12?h-12:h;s.add(new Option(`${h12}:${String(mi).padStart(2,"0")} ${h<12?"AM":"PM"}`,String(m)))}})();
+try{const c=JSON.parse(localStorage.getItem("st_cust")||"{}");CK.forEach(i=>{if(c[i])$(i).value=String(c[i]).slice(0,200)})}catch(_){}
+CK.forEach(i=>$(i).addEventListener("input",()=>{$("err").textContent="";try{const c={};CK.forEach(j=>c[j]=$(j).value);localStorage.setItem("st_cust",JSON.stringify(c))}catch(_){}}));
+/* ===== Free visit counter (Google Sheet). Paste your Apps Script web-app URL below; empty = off. ===== */
+const TRK="https://script.google.com/macros/s/AKfycbzIK6vUri08qv73I8VP3guxasfKl5AUIp5fwHV2KaXtqM0954H2X-9pjAtVMLwoafw/exec";
+function track(ev){try{if(!TRK)return;if(ev==="open"){if(sessionStorage.getItem("st_s"))return;sessionStorage.setItem("st_s","1");}
+let v="";try{v=localStorage.getItem("st_vid");if(!v){v=Math.random().toString(36).slice(2,10);localStorage.setItem("st_vid",v)}}catch(_){}
+const src=new URLSearchParams(location.search).get("src")||"direct";
+new Image().src=TRK+"?e="+ev+"&s="+encodeURIComponent(src)+"&l="+LANG+"&v="+v+"&w="+innerWidth+"&t="+Date.now();}catch(_){}}
+/* ===== Live catalogue from Google Sheet (price + stock). Paste the published CSV link; empty = use built-in list. ===== */
+const SHEET_CSV="";
+function csvParse(t){t=t.replace(/^\uFEFF/,"");const R=[];let r=[],c="",q=false;for(let i=0;i<t.length;i++){const ch=t[i];
+  if(q){if(ch==='"'){if(t[i+1]==='"'){c+='"';i++}else q=false}else c+=ch}
+  else if(ch==='"')q=true;else if(ch===","){r.push(c);c=""}else if(ch==="\n"||ch==="\r"){if(ch==="\r"&&t[i+1]==="\n")i++;r.push(c);c="";if(r.some(x=>x.trim()))R.push(r);r=[]}else c+=ch}
+  r.push(c);if(r.some(x=>x.trim()))R.push(r);return R}
+function applyCSV(text,initial){try{const rows=csvParse(text).slice(1),out=[];
+  rows.forEach(x=>{const cat=(x[0]||"").trim().toLowerCase(),e=(x[1]||"").trim();if(!CAT[cat]||!e)return;
+    if(/^(no|n|0|out|false|over|नाही|नहीं)$/i.test((x[11]||"").trim()))return;
+    const o=[];for(let k=5;k<=9;k+=2){const pk=(x[k]||"").trim(),pr=parseFloat(String(x[k+1]||"").replace(/[₹,\s]/g,""));if(pk&&pr>0)o.push([pk,pr])}
+    if(!o.length)return;out.push({id:out.length,c:cat,e,m:(x[2]||"").trim()||e,h:(x[3]||"").trim()||(x[2]||"").trim()||e,ic:(x[4]||"").trim()||"🛒",o})});
+  if(out.length<10)return false;
+  if(!initial)SAVE();
+  P.length=0;P.push(...out);Object.keys(sel).forEach(k=>delete sel[k]);Object.keys(cart).forEach(k=>delete cart[k]);
+  if(!initial){LOAD();renderAll();}return true}catch(_){return false}}
+async function syncSheet(){if(!SHEET_CSV)return;try{const ac=new AbortController(),tm=setTimeout(()=>ac.abort(),8000);
+  const r=await fetch(SHEET_CSV+(SHEET_CSV.includes("?")?"&":"?")+"t="+Date.now(),{cache:"no-store",signal:ac.signal});clearTimeout(tm);if(!r.ok)return;
+  const txt=await r.text();if(txt.length<50||/^\s*</.test(txt))return;
+  let old=null;try{old=localStorage.getItem("st_data")}catch(_){}
+  if(txt!==old&&applyCSV(txt,false)){try{localStorage.setItem("st_data",txt)}catch(_){}}}catch(_){}}
+try{const cc=localStorage.getItem("st_data");if(cc&&SHEET_CSV)applyCSV(cc,true)}catch(_){}
+LOAD();renderAll();track("open");syncSheet();
+</script>
+</body>
+</html>
